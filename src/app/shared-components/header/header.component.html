@@ -1,0 +1,24 @@
+<div class="flex-container">
+  <section>
+    <button
+      mat-button
+      color="primary"
+      [routerLink]="'/photos'"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Photos
+    </button>
+  </section>
+  <section>
+    <button
+      mat-button
+      color="primary"
+      [routerLink]="'/favorites'"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Favorites
+    </button>
+  </section>
+</div>

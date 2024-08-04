@@ -1,0 +1,14 @@
+.infinite-scroll-container {
+    overflow: scroll;
+    padding: 10px;
+    max-height: 90vh;
+
+    .image-author {
+        text-align: center;
+        position: absolute;
+    }
+    
+    #loaded-image {
+        cursor: pointer;
+    }
+}

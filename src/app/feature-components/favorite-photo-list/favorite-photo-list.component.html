@@ -1,0 +1,13 @@
+<div class="scroll-container">
+    <mat-grid-list
+      cols="2"
+      rowHeight="2:1"
+      gutterSize="1rem"
+      *ngIf="favPhotos$ | async as favPhotos"
+    >
+      <mat-grid-tile *ngFor="let photo of favPhotos; let i = index" (click)="openPhotoDetails(photo)">
+        <h1 class="image-author">{{ photo.author }}</h1>
+        <img [src]="photo.download_url" alt="Loaded Image" id="loaded-image" />
+      </mat-grid-tile>
+    </mat-grid-list>
+</div>

@@ -1,0 +1,8 @@
+<div class="infinite-scroll-container" appInfiniteScroll (scrolledToBottom)="loadMorePhotos()">
+    <mat-grid-list cols="2" rowHeight="2:1" gutterSize="1rem" *ngIf="photosList$ | async as photosList">
+        <mat-grid-tile *ngFor="let photo of photosList; let i=index" (click)="addToFavorites(photo.id)">
+            <h1 class="image-author"> {{ photo.author }}</h1>
+            <img [src]="photo.download_url" alt="Loaded Image" id="loaded-image">
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

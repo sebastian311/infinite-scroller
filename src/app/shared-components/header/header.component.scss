@@ -1,0 +1,14 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+    background-color: whitesmoke;
+
+    button.active {
+        background-color: #3f51b5;
+        color: white;
+    }
+}

@@ -1,0 +1,9 @@
+<div class="info-container">
+  <img [src]="data.photo.download_url" alt="Photo" id="photo"/>
+  <h1>{{ data.photo.author }}</h1>
+  <p>ID: {{ data.photo.id }}</p>
+  <button mat-button (click)="closeDialog()">Close</button>
+  <button mat-button color="warn" (click)="removeFromFavorites()">
+    Remove from Favorites
+  </button>
+</div>
